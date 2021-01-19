@@ -4,6 +4,8 @@ fn main() {
     let stdin = io::stdin();
     let mut stdout = io::stdout();
 
+    let mut board: [[bool; 3]; 3] = [[false; 3]; 3];
+
     print!("Enter something \n > ");
     stdout.flush();
     println!("{}", stdin.lock().lines().next().unwrap().unwrap());
