@@ -4,10 +4,10 @@ fn main() {
     let stdin = io::stdin();
     let mut stdout = io::stdout();
 
-    let mut board: [[bool; 3]; 3] = [[false; 3]; 3];
+    let mut _board: [[bool; 3]; 3] = [[false; 3]; 3];
 
     print!("Enter something \n > ");
-    stdout.flush();
+    let _ = stdout.flush();
     println!("{}", stdin.lock().lines().next().unwrap().unwrap());
     /*
     for line in stdin.lock().lines() {
